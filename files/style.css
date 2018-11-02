@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: -apple-system, blinkMacSystemFont, /* Macの欧文はSan Francisco (OS X 10.11以降) */
+               'Helvetica Neue',            /* Macの欧文 (OS X 10.10以前) */
+               'Segoe UI',                  /* Windowsの欧文 */
+               'Hiragino Kaku Gothic ProN', /* Macのヒラギノ */
+               Meiryo,                      /* Windowsのメイリオ */
+               sans-serif;
+    font-size: 1.0em;
+}
+body* {
+   box-sizing: border-box;
+}
+
+/*=================================================
+PCサイズ 1024px
+==================================================*/
+
+/*=========== ヘッダー  ==============================*/
+
+.site_bar {
+	width: auto;
+	background-color: #079d2c;
+}
+.site_bar p {
+	font-size: 1.4rem;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	padding: 1px 0 1px;
+}
+.header {
+	width: 1024px;
+	margin: 0 auto;
+	padding-top: 42px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.header .header_logo {
+	margin: 0;
+}
+.header .header_contact {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.header_contact_left .hdText {
+	font-size: 1.4rem;	
+}
+.header_contact_left .hdTel {
+	font-size: 2.6rem;
+	font-weight: bold;
+	letter-spacing: 0.26rem;
+	line-height: 1;
+	position: relative;
+}
+.header_contact_left .hdTel img {
+	position: absolute;
+	top: 2px;
+	left: -3px;
+}
+.hdTel span {
+	padding-left: 23px;
+}
+.header_contact_right {
+	margin-left: 10px;
+}
+.header_contact_right .hdAddress {
+	font-size: 1.6rem;
+	line-height: 1.35;
+}
+
+/*=========== グローバルナビ  ==============================*/
+
+.glNav {
+	width: 1024px;
+	height: 40px;
+	margin: 0 auto 24px;
+	display: flex;
+}
+.glNav .glNav_list {
+	width: 256px;
+    height: 40px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #079d2c;
+    list-style: none;
+}
+
+.glNav .glNav_list a {
+	color: #000;
+    text-decoration: none;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.glNav .glNav_list.glNav_list-active a {
+	color: #fff;
+	background-color: #079d2c;
+}
+.glNav .glNav_list a:hover {
+	background-color: #079d2c;
+	color: #fff;
+}
+
+
+/*=========== メイン画像  ==============================*/
+
+.main_img {
+	width: 1024px;
+	margin: 0 auto 24px;
+}
+
+.container {
+	width: 1024px;
+	height: 2000px;
+	margin: 0 auto;
+}
+
+/*=========== 　サイド  ==============================*/
+
+.sideColumn {
+	width: 280px;
+	float: left;
+}
+.title_02 {
+	height: 37px;
+	border-radius: 10px;
+	background-color: #89ca16;
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	padding-top: 3px;
+	margin-bottom: 14px;
+}
+.menuNav_list {
+	margin-bottom: 8px;
+	list-style: none;
+}
+.menuNav_list:last-child {
+	margin-bottom: 22px;
+}
+.menuNav_list a img:hover {
+	opacity: 0.7;
+}
+.secCategory {
+	margin-bottom: 32px;
+}
+.categoryNav {
+	width: 280px;
+	height: 401px;
+	border: 3px solid #009944;
+	border-radius: 10px;
+}
+.categoryNav_list,.categoryNav_list_firstChild,.categoryNav_list_lastChild {
+	width: 279px;
+	height: 50px;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	margin-left: 0.5px;
+}
+.categoryNav_list_firstChild {
+	margin-top: 0.5px;
+	border-radius: 7px 7px 0 0;
+}
+.categoryNav_list_lastChild {
+	border-radius: 0 0 7px 7px;
+}
+.categoryNav_list:hover,.categoryNav_list_firstChild:hover,.categoryNav_list_lastChild:hover {
+	background-color: #cdf586;
+}
+.categoryNav_dotBorder,.categoryNav_dotBorder-disabled {
+	width: 253px;
+	height: 49px;
+	display: block;
+	margin-left: 11px;
+	position: relative;	
+}
+.categoryNav_dotBorder {
+	border-bottom: 1px dotted #009944;		
+}
+.category_item {
+	padding-top: 11px;
+	padding-left: 5px;
+	font-size: 2.0rem;
+	display: inline-block;
+}
+.appliances_img {
+	position: absolute;
+	transform: translate(320%,30%);
+}
+.furniture_img {
+	position: absolute;
+	transform: translate(282%,40%);
+}
+.instrument_img {
+	position: absolute;
+	transform: translate(495%,23%);
+}
+.audio_img {
+	position: absolute;
+	transform: translate(175%,25%);
+}
+.pc_img {
+	position: absolute;
+	transform: translate(280%,30%);
+}
+.camera_img {
+	position: absolute;
+	transform: translate(305%,30%);
+}
+.record_img {
+	position: absolute;
+	transform: translate(295%,30%);
+}
+.dust_img {
+	position: absolute;
+	transform: translate(475%,17%);
+}
+
+/*=========== メインコンテンツ  ==============================*/
+
+.mainColumn {
+	width: 720px;
+	margin: 0 auto;
+	float: right;
+}
+.secBanner_sokujitu {
+	margin-bottom: 8px;
+}
+.secBanner_tel {
+	margin-bottom: 24px;
+}
+.topContent_first {
+	margin-bottom: 56px;
+}
+.topContent_title {
+	margin-bottom: 24px;
+}
+.topContent_col {
+	margin-bottom: 24px;
+}
+.topContent_col_title {
+	font-size: 2.0rem;
+	font-weight: bold;
+	line-height: 2.4rem;
+	padding-bottom: 8px;
+}
+
+.topContent_col_text {
+	font-size: 1.6rem;
+	display: inline;
+}
+.topContent_col_link {
+	text-align: right;
+}
+.textColor-red {
+	color: red;
+}
+.dotInterval-narrow {
+	letter-spacing: -0.7rem;
+}
+.arrow-right {
+	font-size: 2.2rem;
+	margin-right: 10px;
+}
+.detail_link {
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-align: right;
+	color: #000;
+	text-decoration: underline;
+}
+.detail_link:hover {
+	color: red;
+}
+.text_indent {
+	font-size: 1.6rem;
+	text-indent: -1rem;
+	padding-left: 1.5rem; 
+}
+.top_map {
+	margin-top: 16px;
+}
+.top_mapDescription {
+	display:block;
+	text-align: center;
+	font-size: 1.8rem;
+	padding: 8px 0 8px;
+
+}
+.shopInfo th {
+	width: 200px;
+	background-color: #f1f1f1;
+}
+.shopInfo td {
+	width: 520px;
+}
+.shopInfo th,.shopInfo td {
+	height: 55px;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	border: 1px solid #000;
+	text-align: center;
+}
+td.shopInfo_text-green {
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: #079d2c;
+}
+
+/*=========== 　フッター  ==============================*/
+
+footer {
+	width: auto;
+	height: 90px;
+	background-color: #079d2c;
+}
+.footerWrap {
+	width: 730px;
+	height: 50px;
+	margin: 0 auto;
+}
+.footerNav {
+	display: flex;
+	justify-content: space-between;
+}
+.footerNav_list {
+	padding-top: 10px; 
+	font-size: 2.0rem;
+}
+.footerNav_list::before {
+	content: "";
+    vertical-align: middle;
+    margin: 0 18px;
+    border-left: 1px solid #fff;
+}
+.footerNav_list:first-child::before {
+	border: none;
+}
+.footerNav_list a{
+	color: #fff;
+	text-decoration: none;
+}
+.footerNav_list a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+.copyright {
+	font-size: 1.8rem;
+	color: #fff;
+	text-align: center;
+}
